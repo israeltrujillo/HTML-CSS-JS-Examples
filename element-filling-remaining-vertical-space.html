@@ -3,63 +3,63 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <title>HTML/CSS Recipe - Element filling remaining vertical space</title>
-		<style>
-			#parent, #fixed-height, #fill-space {
-			    width: 100%;
-			}
+	<style>
+		#parent, #fixed-height, #fill-space {
+		    width: 100%;
+		}
 
      		#parent {
-			    position: relative;
-				height: 300px;
-			}
+		    position: relative;
+			height: 300px;
+		}
+		
+		#fixed-height, #fill-space {
+		    position: absolute;
+		}		
 			
-			#fixed-height, #fill-space {
-			    position: absolute;
-			}		
-				
-		    #fixed-height { 
-				height : 30px; 
-				bottom: 0; 
-			} 
+	        #fixed-height { 
+			height : 30px; 
+			bottom: 0; 
+		} 
 
-			#fill-space {
-                top : 0;			
-				bottom : 30px;
-                overflow : auto;				
-			} 
-			
-			/*
-			The following is not part of the recipe.			
-			*/
-			
-			#parent {
-			    background-color: blue;
-			}
-			
-			#fill-space {
-			    background-color: green;
-			}
-			
-			#fixed-height {
-			    background-color: yellow;
-			}
-			
-			#fill-space > div {
-			    height : 400px;
-			}
-			
-		</style>
+		#fill-space {
+        		top : 0;			
+			bottom : 30px;
+        		overflow : auto;				
+		} 
+		
+		/*
+		The following is not part of the recipe.			
+		*/
+		
+		#parent {
+		    background-color: blue;
+		}
+		
+		#fill-space {
+		    background-color: green;
+		}
+		
+		#fixed-height {
+		    background-color: yellow;
+		}
+		
+		#fill-space > div {
+		    height : 400px;
+		}
+		
+	</style>
     </head>
     <body>
-		<div id="parent">
-			<div id="fixed-height">
-				<center>Fixed Height Element</center>
-		    </div>
-			<div id="fill-space">
-			    <div>
-				    <p>Content</p>
-				</div>
+	<div id="parent">
+		<div id="fixed-height">
+			<center>Fixed Height Element</center>
+		</div>
+		<div id="fill-space">
+			<div>
+			<p>Content</p>
 			</div>
 		</div>
-	</body>
+	</div>
+    </body>
 </html>
