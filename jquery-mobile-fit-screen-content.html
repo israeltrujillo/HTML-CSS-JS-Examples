@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>jQuery Mobile Examples</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        	
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+			
+		<style>
+		    .fit-content, .bottom-footer {
+			    position : absolute;
+			}
+		
+		    .fit-content {
+			    top : 44px;
+			    bottom : 44px;
+				left : 0;
+				right : 0;
+			}
+
+			.fit-content > div {
+				height : 100%;
+			}
+			
+			.bottom-footer {
+			    bottom : 0;
+				width : 100%;
+			}
+			
+			.yellow-bg {
+			    background-color: yellow;
+			}
+		</style>
+        
+    </head>
+    <body>
+        <!-- home page -->
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Home</h1>
+            </div>
+
+            <div data-role="content">
+				<ol data-role="listview" data-inset="true">
+					<li data-role="list-divider">Examples</li>
+					<li><a href="#full-container-example">Fit Screen Content</a></li>
+				</ol>                	
+            </div>
+			
+			<div data-role="footer" class="bottom-footer">
+                <h4>Page Footer</h4>
+            </div>			
+        </div>
+        
+        <!-- full container example -->
+        <div data-role="page" id="full-container-example">
+            <div data-role="header">
+                <a href="#home" data-rel="back" data-icon="back">Home</a>
+                <h1>Full Container</h1>
+            </div>
+
+            <div data-role="content" class="fit-content">	
+			    <div class="yellow-bg">
+				    Available space in yellow  
+				</div>
+            </div>
+
+            <div data-role="footer" class="bottom-footer">
+                <h4>Page Footer</h4>
+            </div>
+        </div>
+        
+    </body>
+</html>
